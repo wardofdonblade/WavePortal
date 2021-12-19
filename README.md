@@ -1,15 +1,10 @@
-# Basic Sample Hardhat Project
+# Wave Portal - A sample Solidity application
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.
-
-Try running some of the following tasks:
-
-```shell
-npx hardhat accounts
-npx hardhat compile
-npx hardhat clean
-npx hardhat test
-npx hardhat node
-node scripts/sample-script.js
-npx hardhat help
-```
+# URLs
+| Site      | URL |
+| ----------- | ----------- |
+| Project Doc      | https://app.buildspace.so/projects/CO02cf0f1c-f996-4f50-9669-cf945ca3fb0b       |
+| Project UI   | https://replit.com/@NathanJohnson18/waveportal-starter-project#src/App.jsx        |
+| MetaMask              | https://chrome.google.com/webstore/detail/metamask/nkbihfbeogaeaoehlefnkodbefgpgknn              |
+| Alchemy | https://dashboard.alchemyapi.io/apps/16kw5tg4doer5po5 |
+| MyCrypto Faucet | https://app.mycrypto.com/faucet |
