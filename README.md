@@ -2,6 +2,7 @@
 
 # Contracts
 | Name | Address |
+| ----------- | ----------- |
 | WavePortal | 0x213B83Bfb7F2370569a97233B03526a6abF3Dc74 |
 
 # URLs

@@ -13,6 +13,7 @@ contract WavePortal {
         address waver;
         string message;
         uint256 timestamp;
+        bool winner;
     }
 
     Wave[] waves;
@@ -27,13 +28,13 @@ contract WavePortal {
         lastWavedAt[msg.sender] = block.timestamp;
 
         totalWaves += 1;
-        console.log("%s has waved!", msg.sender);
-
-        waves.push(Wave(msg.sender, _message, block.timestamp));
+        console.log("%s has waved!", msg.sender);        
         seed = (block.difficulty + block.timestamp + seed) % 100;
 
+        bool winner = false;
         if (seed <= 50) {
             console.log("%s won!", msg.sender);
+            winner = true;
 
             uint256 prizeAmount = 0.0001 ether;
             require(
@@ -42,8 +43,11 @@ contract WavePortal {
             );
             (bool success, ) = (msg.sender).call{value: prizeAmount}("");
             require(success, "Failed to withdraw money from contract.");
+
+            winner = true;
         }
 
+        waves.push(Wave(msg.sender, _message, block.timestamp, winner));
         emit NewWave(msg.sender, block.timestamp, _message);
     }
 
