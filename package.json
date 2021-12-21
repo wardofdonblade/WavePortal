@@ -1,13 +1,13 @@
 {
-  "name": "my-wave-portal",
+  "name": "waveportal",
   "version": "1.0.0",
-  "description": "",
+  "description": "A fun little intro to Web3",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "najohnson.mn@gmail.com",
   "license": "ISC",
   "devDependencies": {
     "@nomiclabs/hardhat-ethers": "^2.0.3",
